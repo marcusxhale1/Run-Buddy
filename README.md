@@ -2,8 +2,8 @@
 ## Purpose 
 A website the offers fitness training services 
 ## Built With 
-*HTML 
-*CSS
+* HTML 
+* CSS
 
 ##Website
 https://marcusxhale1.github.io/Run-Buddy/
