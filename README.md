@@ -5,8 +5,8 @@ A website the offers fitness training services
 * HTML 
 * CSS
 
-##Website
+## Website
 https://marcusxhale1.github.io/Run-Buddy/
 
-#Contribution
+## Contribution
 Made with Love my Marcus 
