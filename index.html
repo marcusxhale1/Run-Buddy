@@ -1,36 +1,204 @@
+<!--List the Doctype first that is the first thing you do-->
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    
+<!-- Head -->
+<head>
+      <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8"/>
         <title>Run Buddy</title>
     </head>
     <body>
-        <!-- navigation -->
+      
+      
+      
+      
+      
+      <!-- navigation -->
+     <!-- AND Header -->
+      
       <header>
-    <h1>RUN BUDDY</h1>
+    <h1>
+   <a href="/">RUN BUDDY</a>
+    </h1>
+    <nav>
+    <!-- Unorder List Element-->
+    <ul>
+    <!-- List Item Element -->
+     <li>
+       <!-- Anchor Element -->
+       <a href="#What-We-Do">What We Do</a>
+       </li>
+       <li>
+         <a href="What-You-Do">What You Do</a>
+       </li>
+       <Li>
+         <a href="Meet-The-Trainers">Meet The Trainers</a>
+       </Li>
+       <li>
+         <a href="Reach Out">Reach Out</a>
+       </li>
+       </ul>
+       </nav>
       </header> 
-      <!-- hero/jumbotron-->
-      <section>
+
+      
+   
+   
+      <!--Hero-->
+      <section class="hero">
+        <div class="hero-form">
+      <div>
+        <h3>Get Started Today</h3>
+        <p>Fill out this form below.</p>
+        <form>
+          <label for="Name">Enter Your Name:</label>
+          <input type="text" placeholder="What's Your Name?" name="Name" id="name" class="form-input"/>
+          <label for="Email">Enter Your Email</label>
+          <input type="email" placeholder="What's Your Email?" name="Email" id="email" class="form-input"/>
+          <label for="Phone Number">Phone Number</label>
+          <input type="tel" placeholder="What's Your Number?" name="Number" id="Number" class="form-input"/>
+          <p>
+            Have you ever had a training session with a personal trainer from this location before? 
+            <input type="radio" name="Trainer-Confrim" id="Trainer Yes" />
+            <label for="Trainer-Yes">Yes</label>
+            <input type="radio" name="Trainer-Confrim" id="Trainer No" />
+            <label for="Trainer-No">No</label>
+          </p>
+          <p>I acknowledge that I am at least 18 years of age.</p>
+          <input type="checkbox" name="18+ age" id="18+" />
+          </p>
+          <button type="Submit">
+            Lets Go! 
+          </button>
+        </form>
+        </div>
       </section>
+
+
+
+      <!-- BODY -->
+      
+      
       <!-- "What We Do" section -->
-      <section>
+      <section id="What-We-Do" class="intro">
         <h2>What We Do</h2>
+        <p>What don't we do? Whatever your goal is, gaining weight, losing weight, being in better condition, being in the best conditon ever you've ever been in, we do it all! Fill out the form above if you're interested!</p>
       </section>
+     
+     
+     
+     
       <!-- "What You Do" section -->
-      <section>
+      <section id="What-You-Do" class="steps">
           <h2>What You Do</h2>
+      
+
+          <div>
+            <!-- Inseting an image element now -->
+            <img src="./Images/step-1.svg" alt="" />
+            <h3>Step 1: Fill Out This Form Above.</h3>
+            <p>You're already here, so why not?</p>
+          </div>
+
+          <div>
+            <img src="./Images/step-2.svg" alt="" />
+            <h3>Step 2: Consult With One Of Our Trainers.</h3>
+            <p>Are you here to build muscle, lose weight, or to feel as best as you can possibly be?</p>
+          </div>
+
+          <div>
+            <img src="./Images/step-3.svg" alt="" />
+            <h3>Step 3: Get Running!</h3>
+            <p>Hit the ground running (literally) or lifting! Your trainer will help tailor the best workout plan for you!</p>
+          </div>
+
+          <div>
+            <img src="./Images/step-4.svg" alt="" />
+            <h3>Step 4: See Results.</h3>
+            <p>Weekly check-ins with your trainer, they care about you, and seeing you succeed in your personal training goals, helps them succeed!</p>
+          </div>
+
         </section>
+
+
+
+
       <!-- "Meet The Trainers Section"-->
-        <section>
-        <h2>Meet The Trainers</h2>
+      <!-- First Trainers Biooo-->
+        <section id="Meet-The-Trainers" class="Trainers">
+        <h2 class="section-title primary-border"> Meet The Trainers</h2>
+        <article class="trainer">
+          <img src="./Images/trainer-1.jpg" alt="Trainer in workout clothes ready to pump iron"/>
+          <div class="trainer-bio text-left">
+            <h3>Arron Stephens</h3>
+            <h4>Speed/Strength</h4>
+            <p>
+              This man can do it all, he can teach you how to lift, he can teach you how to maximize your cardio, he can get you in any shape that you'd like.
+            </p>
+          </div> 
+        </article>
+
+        <!--Second Trainers Biooo-->
+        <article class="trainer">
+          <div class="trainer-bio text-right">
+            <h3>Joanna Gill</h3>
+            <h4>Endurance</h4>
+            <p>Now this girl right here. She will push you to your limits. Now everyone has different limits, so she'll make sure to personalize your workout. But if you're looking for a cardio workout, this is your trainer right here.
+            </p>
+          </div>
+          <img src="./Images/trainer-2.jpg" alt="Trainer for conditioning"/>
+        </article>
+
+        <!-- 3rd trainer lets gooooo-->
+        <article class="trainer">
+          <img src="./Images/trainer-3.jpg" alt="Harry trying too hard. He's not really a trainer."/>
+          <div class="trainer-bio text-left">
+            <h3>Harry Snmith</h3>
+            <h4>Stregnth</h4>
+            <p>Now if you're looking for someone to help with stregnth building, this is your guy. I promise.</p>
+          </div>
+        </article>
+
         </section>
+
+
       <!--"Reach Out" section-->
-        <section>
-            <h2>Reach Out</h2>
+        <section id="reach-out" class="contact">
+            <h2 class="section-title secondary-border">Reach Out</h2>
+            <div class="contact-info">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12654.023963288942!2d-122.01168915280644!3d37.54314092683552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbf6575ad31d9%3A0xa2c1aa4731ea12e4!2sGlenmoor%2C%20Fremont%2C%20CA!5e0!3m2!1sen!2sus!4v1632623592983!5m2!1sen!2sus" 
+                style="border:0;"
+                 allowfullscreen=""
+                  loading="lazy">
+                </iframe>"
+             <h3>Run Buddy</h3>
+                <p>
+                  Any questions or concerns before signing up? 
+                  <br />
+                  Let us know and we'll be happy to talk to you! 
+                </p>
+                <address>
+                  55 Main Street <br/>
+                  Some Town, CA <br/>
+                  12345<br/>
+                  P: 555-RUN-BUDZ (555-786-2839)<br/>
+                  E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+                </address>
+              </div>
         </section>
+
+
+
+
       <!-- footer -->
         <footer>
-            <h2>❤️ Made with love by Run Buddy</h2>
+            <h2>❤️ Made with love by Marcus Hale</h2>
+            <div>
+              <a href="./privacy-policy.html">Read Our Policy</a><br />
+              &copy; 2019 Run Buddy, Inc. 
+            </div>
         </footer>  
     </body>
-</html>
+</html> 
